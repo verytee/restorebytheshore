@@ -11,3 +11,72 @@
   position: relative;
   overflow: hidden;
 }
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: linear-gradient(to top, var(--warm-white), transparent);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 8rem 0 6rem;
+}
+
+.hero-eyebrow {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: 1.5rem;
+}
+
+.hero h1 {
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  font-weight: 300;
+  color: #fff;
+  line-height: 1.05;
+  margin-bottom: 1rem;
+}
+
+.hero h1 em {
+  font-style: italic;
+  color: var(--gold-light);
+}
+
+.hero-sub {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  color: rgba(255, 255, 255, 0.88);
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  max-width: 600px;
+}
+
+.hero-notice {
+  background-color: rgba(201, 168, 76, 0.18);
+  border-left: 3px solid var(--gold);
+  padding: 1rem 1.5rem;
+  max-width: 580px;
+  margin-bottom: 2.5rem;
+}
+
+.hero-notice p {
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 0.95rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.hero-notice strong {
+  color: var(--gold-light);
+  font-weight: 400;
+}
