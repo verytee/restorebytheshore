@@ -1,3 +1,39 @@
+/* ============================================================
+ Stylesheet for Restore by the Shore
+   =================================.=========================== */
+
+/* ===== CSS VARIABLES ===== */
+:root {
+  --ocean-deep:   #1a4a6e;
+  --ocean-mid:    #2a7ab8;
+  --ocean-light:  #5baad6;
+  --ocean-pale:   #d6edf8;
+  --sand:         #f5f0e8;
+  --gold:         #c9a84c;
+  --gold-light:   #e8cc7a;
+  --warm-white:   #fdfaf5;
+  --text-dark:    #1c2b3a;
+  --text-mid:     #3a5068;
+  --danger-red:   #b71c1c;
+  --danger-red-dark: #c62828;
+}
+
+/* ===== BASE ===== */
+*  { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: var(--text-dark);
+  background-color: var(--warm-white);
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, .display-font {
+  font-family: 'Playfair Display', serif;
+}
+
+
 /* ===== NAVBAR ===== */
 .navbar {
   background-color: rgba(26, 74, 110, 0.97) !important;
