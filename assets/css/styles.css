@@ -210,3 +210,79 @@ h1, h2, h3, h4, .display-font {
   display: block;
   margin: auto;
 }
+
+/* Garden Flat Section */
+.accom-section {
+  background-color: var(--sand);
+}
+
+.amenity-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(26, 74, 110, 0.1);
+}
+
+
+.amenity-item:last-child {
+  border-bottom: none;
+}
+
+.amenity-item h6 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ocean-deep);
+  margin-bottom: 0.2rem;
+}
+
+.amenity-item p {
+  font-size: 0.88rem;
+  color: var(--text-mid);
+  margin: 0;
+  line-height: 1.55;
+}
+
+
+/* ===== PROMO CARD (ocean box in sidebar) ===== */
+.ocean-promo-card {
+  background: linear-gradient(160deg, var(--ocean-deep), var(--ocean-mid));
+  padding: 2.5rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+}
+
+.ocean-promo-card-icon {
+  font-size: 2rem;
+  color: var(--gold-light);
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.ocean-promo-card h4 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 0.75rem;
+}
+
+.ocean-promo-card p {
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.75;
+}
+
+/* CAROUSEL */
+.carousel-item {
+  height: 400px;
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 12px;
+}
+
