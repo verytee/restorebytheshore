@@ -154,3 +154,59 @@ h1, h2, h3, h4, .display-font {
   color: var(--gold-light);
   font-weight: 400;
 }
+
+/* ===== SECTIONS ===== */
+
+/* ===== SECTION UTILITIES ===== */
+.section-pad     { padding: 6rem 0; }
+.section-pad-sm  { padding: 4rem 0; }
+
+.section-label {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.section-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 300;
+  color: var(--ocean-deep);
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+}
+
+.section-title em {
+  font-style: italic;
+  color: var(--ocean-mid);
+}
+
+.lead-text {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: var(--text-mid);
+  font-weight: 300;
+}
+
+.divider {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(to right, var(--gold), transparent);
+  margin: 1.5rem 0;
+}
+
+.divider.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-image {
+  max-width: 50%;
+  border-radius: 12px;
+  display: block;
+  margin: auto;
+}
