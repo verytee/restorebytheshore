@@ -418,6 +418,65 @@ h1, h2, h3, h4, .display-font {
   width: 100%;
 }
 
+/* Footer */
+
+    footer {
+      background: #0e2d46;
+      color: rgba(255,255,255,0.75);
+      padding: 3rem 0 1.5rem;
+    }
+
+    footer h5 {
+      font-family: 'Cormorant Garamond', serif;
+      color: var(--gold-light);
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    footer a {
+      color: rgba(255,255,255,0.65);
+      text-decoration: none;
+      font-size: 0.85rem;
+      transition: color 0.2s;
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+
+    footer a:hover { color: var(--gold-light); }
+
+    .emergency-bar {
+      background: linear-gradient(135deg, #b71c1c, #c62828);
+      padding: 1rem;
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .emergency-bar p {
+      color: #fff;
+      margin: 0;
+      font-size: 0.88rem;
+    }
+
+    .emergency-bar strong { font-size: 1.1rem; }
+
+    .footer-brand {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      color: var(--gold-light);
+      font-weight: 600;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.4);
+    }
+
+/* Media Queries */
+
 @media (max-width: 575.98px) {
   #contact.contact-section {
     min-height: auto;
@@ -425,11 +484,6 @@ h1, h2, h3, h4, .display-font {
   }
 }
 
-
-
-
-
-/* Media Queries */
 
 @media (min-width: 768px) {
 .about-image {
