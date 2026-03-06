@@ -363,12 +363,6 @@ We are unable to offer parking. There is free unrestricted on-street parking ava
   <div class="container-fluid px-0">
 
     <div class="container py-4">
-      <h3 class="section-title text-center"><em>Find Us</em> in Penzance</h3>
-      <p class="map-intro">
-        We are located in a quiet residential area just a five-minute walk from Penzance town. <br>We will confirm the address with you when you book, and we are very happy to offer a complimentary pick-up from Penzance train station or bus station by prior arrangement.
-      </p>
-    </div>
-
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10591.3!2d-5.537!3d50.119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486b4e7b1a79d6c3%3A0x6d18fbfac65a2fc!2sPenzance%2C+Cornwall!5e0!3m2!1sen!2suk!4v1"
       allowfullscreen=""
@@ -376,14 +370,130 @@ We are unable to offer parking. There is free unrestricted on-street parking ava
       referrerpolicy="no-referrer-when-downgrade"
       title="Map of Penzance, Cornwall">
     </iframe>
-
+      <h3 class="section-title text-center"><em>Find Us</em> in Penzance</h3>
+      <p class="map-intro">
+        We are located in a quiet residential area just a five-minute walk from Penzance town. <br>We will confirm the address with you when you book, and we are very happy to offer a complimentary pick-up from Penzance train station or bus station by prior arrangement.
+      </p>
+    </div>
   </div>
 </section>
 
 
 <!-- Contact -->
-<section>
+<section id="contact" class="contact-section section-pad">
+  <div class="container-fluid contact-shell">
+    <div class="row g-4 justify-content-center">
 
+      <!-- Form column -->
+      <div class="col-12 col-xl-10 fade-up">
+
+        <span class="section-label">Get in Touch</span>
+        <h2 class="section-title">We'd Love to<br /><em>Hear From You</em></h2>
+        <div class="divider"></div>
+
+        <p class="lead-text mb-4">
+          Tell us a little about yourself and your situation. We read every message personally and will always reply with warmth. There is no application process but we will want to have a conversation first to check if we're a good fit for each other.
+        </p>
+
+        <!-- Contact form -->
+        <div class="contact-form-wrap" id="contactForm" aria-label="Contact form section">
+          <form id="contactFormElement" action="https://formsubmit.co/verityalls@gmail.com" method="POST" class="contact-form glass-panel" aria-label="Contact form to send an enquiry to Restore By The Shore">
+            
+            <!-- Hidden fields for FormSubmit configuration -->
+            <input type="hidden" name="_subject" value="New enquiry from Restore By The Shore website">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://restorebytheshore.co.uk/thankyou.html">
+            <input type="text" name="_honey" style="display:none">
+
+            <div class="row g-3">
+              <div class="col-12 col-md-6">
+              <label class="form-label" for="firstName">First Name *</label>
+              <input type="text" class="form-control" id="firstName" name="firstName"
+                     placeholder="Your first name" required aria-required="true"/>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <label class="form-label" for="lastName">Last Name *</label>
+              <input type="text" class="form-control" id="lastName" name="lastName"
+                     placeholder="Your last name" required aria-required="true"/>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <label class="form-label" for="phone">Phone Number *</label>
+              <input type="tel" class="form-control" id="phone" name="phone"
+                     placeholder="07xxx xxxxxx" required aria-required="true"/>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <label class="form-label" for="email">Email Address *</label>
+              <input type="email" class="form-control" id="email" name="email"
+                     placeholder="your@email.com" required aria-required="true"/>
+            </div>
+
+            <div class="col-12">
+              <label class="form-label" for="organisation">Affiliated Church or Organisation *</label>
+              <input type="text" class="form-control" id="organisation" name="organisation"
+                     placeholder="Name of church or charity, including postcode" required aria-required="true"/>
+            </div>
+
+            <div class="col-12">
+              <label class="form-label" for="role">Your Role *</label>
+              <select class="form-select" id="role" name="role" required aria-required="true">
+                <option value="" disabled selected>Please select your role...</option>
+                <option>Vicar / Rector / Minister</option>
+                <option>Curate</option>
+                <option>Christian Youth Worker</option>
+                <option>Worship Leader</option>
+                <option>Chaplain</option>
+                <option>Other (please explain in message)</option>
+              </select>
+            </div>
+
+            <div class="col-12">
+              <label class="form-label" for="message">Message *</label>
+              <textarea class="form-control" id="message" name="message"
+                        placeholder="Tell us a little about yourself, when you'd like to come, and any questions that you might have."
+                        required aria-required="true" rows="10"></textarea>
+            </div>
+
+            <!-- Consent checkbox -->
+            <div class="col-12">
+              <div class="form-check consent-wrapper">
+                <input class="form-check-input" type="checkbox" id="consentContact" name="consentContact" required aria-required="true" />
+                <label class="form-check-label" for="consentContact">
+                  I am happy to be contacted by Restore by the Shore regarding my enquiry. I understand my details will only be used to respond to this message and will not be shared with any third parties.
+                  (Required)
+                </label>
+              </div>
+                            <div class="form-check consent-wrapper">
+                <input class="form-check-input" type="checkbox" id="consentEligibility" name="consentEligibility" required aria-required="true" />
+                <label class="form-check-label" for="consentEligibility">
+                  I confirm that I am employed by, or volunteering with, a Christian organisation or registered charity, and I am facing or recovering from burnout. I understand that evidence of this is required before a stay can be offered.
+             (Required)
+                </label>
+              </div>
+            </div>
+
+              <div class="col-12">
+                <button type="submit" class="btn btn-light" id="submitBtn" aria-label="Send your enquiry message to Kate at Restore By The Shore" disabled>
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </form>
+          
+          <p class="form-footnote">
+            We aim to make contact with you within a few days. Please do not wait if you are in crisis, see the support links in the footer.
+          </p>
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+  </div>
 </section>
 
 <!-- Safeguarding / Wellbeing Resources-->

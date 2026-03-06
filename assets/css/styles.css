@@ -378,6 +378,53 @@ h1, h2, h3, h4, .display-font {
   display: block;
 }
 
+/* Contact */
+#contact.contact-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.contact-shell {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.contact-form-wrap {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#contact .section-label,
+#contact .section-title,
+#contact .divider,
+#contact .lead-text {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contact .divider {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+#contact .contact-form {
+  width: 100%;
+}
+
+@media (max-width: 575.98px) {
+  #contact.contact-section {
+    min-height: auto;
+    padding: 3rem 0;
+  }
+}
+
 
 
 
