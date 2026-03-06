@@ -204,8 +204,8 @@ h1, h2, h3, h4, .display-font {
   margin-left: auto;
   margin-right: auto;
 }
+
 .about-image {
-  max-width: 50%;
   border-radius: 12px;
   display: block;
   margin: auto;
@@ -286,3 +286,14 @@ h1, h2, h3, h4, .display-font {
   border-radius: 12px;
 }
 
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+.about-image {
+  max-width: 50%;
+  border-radius: 12px;
+  display: block;
+  margin: auto;
+}
+}
