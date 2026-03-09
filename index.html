@@ -303,59 +303,90 @@ We are unable to offer parking. There is free unrestricted on-street parking ava
       <h2 class="section-title">Penzance, <em>West Cornwall</em></h2>
       <div class="divider mx-auto"></div>
       <p class="lead-text area-intro">
-        Restore by the Shore is a true ocean of calm positioned in the seaside town of Penzance. Everything here moves a little slower, the air smells of salt, and the light on the sea in the evening is something you won't easily forget. We can arrange days out together, but we also want to give you the freedom to explore the area at your own pace. Here are some of our favourite local attractions and activities that we think you might enjoy during your stay.
+        Restore by the Shore is a true ocean of calm where you have the freedom to explore the area at your own pace. Here are some of our favourite local attractions and activities that we think you might enjoy during your stay.
       </p>
     </div>
 
-    <div class="row g-4">
+    <div class="accordion area-accordion fade-up" id="localAreaAccordion">
 
-      <div class="col-md-6 col-lg-4 fade-up">
-        <div class="attraction-card">
-          <i class="fa-solid fa-water"></i> 
-          <h5>Penzance Promenade</h5>
-          <p>A long, beautiful seafront walk and next to the UK's largest seawater pool, Jubilee Pool which is a degree or two warmer than the sea, and geothermal pool, reaching temperatures between 28-30 degrees.</p>
+      <div class="accordion-item area-acc-item area-acc-prom">
+        <h3 class="accordion-header" id="areaHeadingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#areaCollapseOne" aria-expanded="true" aria-controls="areaCollapseOne">
+            <i class="fa-solid fa-water me-2"></i>Penzance Promenade
+          </button>
+        </h3>
+        <div id="areaCollapseOne" class="accordion-collapse collapse show" aria-labelledby="areaHeadingOne" data-bs-parent="#localAreaAccordion">
+          <div class="accordion-body">
+            A long, beautiful seafront walk and next to the UK's largest seawater pool, Jubilee Pool which is a degree or two warmer than the sea, and geothermal pool, reaching temperatures between 28-30 degrees.
+          </div>
         </div>
       </div>
 
-      <div class="col-md-6 col-lg-4 fade-up">
-        <div class="attraction-card">
-          <i class="fa-brands fa-fort-awesome"></i>
-          <h5>Marazion</h5>
-          <p>Marazion is a small and picturesque seaside town which looks out onto Mounts Bay and St Michaels Mount. St Michaels Mount is an iconic tidal island with a medieval castle, reachable on foot at low tide or by small ferry from Marazion. You can see St Michaels Mount in the distance from our garden.</p>
+      <div class="accordion-item area-acc-item area-acc-marazion">
+        <h3 class="accordion-header" id="areaHeadingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#areaCollapseTwo" aria-expanded="false" aria-controls="areaCollapseTwo">
+            <i class="fa-brands fa-fort-awesome me-2"></i>Marazion
+          </button>
+        </h3>
+        <div id="areaCollapseTwo" class="accordion-collapse collapse" aria-labelledby="areaHeadingTwo" data-bs-parent="#localAreaAccordion">
+          <div class="accordion-body">
+            Marazion is a small and picturesque seaside town which looks out onto Mounts Bay and St Michaels Mount. St Michaels Mount is an iconic tidal island with a medieval castle, reachable on foot at low tide or by small ferry from Marazion. You can see St Michaels Mount in the distance from our garden.
+          </div>
         </div>
       </div>
 
-      <div class="col-md-6 col-lg-4 fade-up">
-        <div class="attraction-card">
-          <i class="fa-solid fa-binoculars"></i>
-          <h5>Land's End</h5>
-          <p>Just 10 miles away is the end of mainland Britain. Stand at the cliff's edge and feel the scale of things. Nearby is the Minack Theatre, an extraordinary open-air theatre carved into the cliffs at Porthcurno with the Atlantic as your backdrop for live performances.</p>
+      <div class="accordion-item area-acc-item area-acc-landsend">
+        <h3 class="accordion-header" id="areaHeadingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#areaCollapseThree" aria-expanded="false" aria-controls="areaCollapseThree">
+            <i class="fa-solid fa-binoculars me-2"></i>Land's End
+          </button>
+        </h3>
+        <div id="areaCollapseThree" class="accordion-collapse collapse" aria-labelledby="areaHeadingThree" data-bs-parent="#localAreaAccordion">
+          <div class="accordion-body">
+            Just 10 miles away is the end of mainland Britain. Stand at the cliff's edge and feel the scale of things. Nearby is the Minack Theatre, an extraordinary open-air theatre carved into the cliffs at Porthcurno with the Atlantic as your backdrop for live performances.
+          </div>
         </div>
       </div>
 
-      <div class="col-md-6 col-lg-4 fade-up">
-        <div class="attraction-card">
-          <i class="bi bi-flower1"></i>
-          <h5>Trengwainton Garden</h5>
-          <p>A sheltered National Trust garden just outside Penzance, famous for its subtropical plants and tranquil woodland walks. Beautiful at any time of year.</p>
+      <div class="accordion-item area-acc-item area-acc-trengwainton">
+        <h3 class="accordion-header" id="areaHeadingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#areaCollapseFour" aria-expanded="false" aria-controls="areaCollapseFour">
+            <i class="bi bi-flower1 me-2"></i>Trengwainton Garden
+          </button>
+        </h3>
+        <div id="areaCollapseFour" class="accordion-collapse collapse" aria-labelledby="areaHeadingFour" data-bs-parent="#localAreaAccordion">
+          <div class="accordion-body">
+            A sheltered National Trust garden just outside Penzance, famous for its subtropical plants and tranquil woodland walks. Beautiful at any time of year.
+          </div>
         </div>
       </div>
 
-      <div class="col-md-6 col-lg-4 fade-up">
-        <div class="attraction-card">
-          <i class="fa-solid fa-fish"></i>
-          <h5>Newlyn Harbour</h5>
-          <p>We are blessed with fresh fish from Newlyn harbour, proper Cornish pasties, and Newlyn Art Gallery. The gallery celebrates the extrodinary quality of the Atlantic light beautifully.</p>
+      <div class="accordion-item area-acc-item area-acc-newlyn">
+        <h3 class="accordion-header" id="areaHeadingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#areaCollapseFive" aria-expanded="false" aria-controls="areaCollapseFive">
+            <i class="fa-solid fa-fish me-2"></i>Newlyn Harbour
+          </button>
+        </h3>
+        <div id="areaCollapseFive" class="accordion-collapse collapse" aria-labelledby="areaHeadingFive" data-bs-parent="#localAreaAccordion">
+          <div class="accordion-body">
+            We are blessed with fresh fish from Newlyn harbour, proper Cornish pasties, and Newlyn Art Gallery. The gallery celebrates the extrodinary quality of the Atlantic light beautifully.
+          </div>
         </div>
       </div>
 
-      <div class="col-md-6 col-lg-4 fade-up">
-        <div class="attraction-card">
-          <i class="bi bi-person-walking"></i>
-          <h5>Coastal Path Walking</h5>
-          <p>The South West Coast Path runs right through Penzance and offers the chance to walk the cliffs, listen to the sea, and go at whatever pace you choose.</p>
+      <div class="accordion-item area-acc-item area-acc-coastal">
+        <h3 class="accordion-header" id="areaHeadingSix">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#areaCollapseSix" aria-expanded="false" aria-controls="areaCollapseSix">
+            <i class="bi bi-person-walking me-2"></i>Coastal Path Walking
+          </button>
+        </h3>
+        <div id="areaCollapseSix" class="accordion-collapse collapse" aria-labelledby="areaHeadingSix" data-bs-parent="#localAreaAccordion">
+          <div class="accordion-body">
+            The South West Coast Path runs right through Penzance and offers the chance to walk the cliffs, listen to the sea, and go at whatever pace you choose.
+          </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
