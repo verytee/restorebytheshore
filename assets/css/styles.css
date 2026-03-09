@@ -244,32 +244,53 @@ h1, h2, h3, h4, .display-font {
   background-color: var(--sand);
 }
 
-.amenity-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  padding: 1rem 0;
-  border-bottom: 1px solid rgba(26, 74, 110, 0.1);
+/* Amenities Accordion */
+.amenities-accordion {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(26, 74, 110, 0.15);
 }
 
+.amenities-accordion .accordion-item {
+  border: none;
+  border-bottom: 1px solid rgba(26, 74, 110, 0.1);
+  background-color: #fff;
+}
 
-.amenity-item:last-child {
+.amenities-accordion .accordion-item:last-child {
   border-bottom: none;
 }
 
-.amenity-item h6 {
+.amenities-accordion .accordion-button {
+  background-color: #fff;
+  color: var(--ocean-deep);
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.05rem;
   font-weight: 600;
-  color: var(--ocean-deep);
-  margin-bottom: 0.2rem;
+  padding: 1rem 1.25rem;
+  box-shadow: none;
 }
 
-.amenity-item p {
-  font-size: 0.88rem;
+.amenities-accordion .accordion-button:not(.collapsed) {
+  background-color: var(--ocean-pale);
+  color: var(--ocean-deep);
+  box-shadow: none;
+}
+
+.amenities-accordion .accordion-button:focus {
+  border-color: rgba(26, 74, 110, 0.2);
+  box-shadow: none;
+}
+
+.amenities-accordion .accordion-button::after {
+  color: var(--ocean-mid);
+}
+
+.amenities-accordion .accordion-body {
+  padding: 0 1.25rem 1.2rem;
   color: var(--text-mid);
-  margin: 0;
-  line-height: 1.55;
+  font-size: 0.88rem;
+  line-height: 1.7;
 }
 
 
@@ -475,6 +496,9 @@ h1, h2, h3, h4, .display-font {
       background: #0e2d46;
       color: rgba(255,255,255,0.75);
       padding: 3rem 0 1.5rem;
+      width: 100vw;
+      margin-left: calc(50% - 50vw);
+      margin-right: calc(50% - 50vw);
     }
 
     footer h5 {
