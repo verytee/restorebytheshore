@@ -433,7 +433,7 @@ h1, h2, h3, h4, .display-font {
 
 /* Map */
 .map-section {
-  background-color: var(--ocean-pale);
+  background-color: transparent;
 }
 
 .map-intro {
@@ -569,19 +569,19 @@ h1, h2, h3, h4, .display-font {
 }
 
 #area .area-intro {
-  margin-left: 0;
+  margin-left: auto;
   margin-right: 0;
 }
 
 #area .area-accordion {
   max-width: none;
-  margin-left: 0;
+  margin-left: auto;
   margin-right: 0;
 }
 
 .map-section .area-intro {
-  margin-left: auto;
-  margin-right: 0;
+  margin-left: 0;
+  margin-right: auto;
 }
 
 .area-accordion .accordion-button {
