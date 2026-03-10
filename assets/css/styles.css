@@ -759,6 +759,13 @@ textarea.form-control {
 }
 
 /* Responsive */
+@media (min-width: 768px) {
+  .about-image {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 991.98px) {
   :root {
     --navbar-height: 82px;
