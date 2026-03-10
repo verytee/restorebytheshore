@@ -706,6 +706,26 @@ textarea.form-control {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.footer-bottom a {
+  display: inline;
+  margin-bottom: 0;
+  color: var(--gold-light);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer-bottom a:hover,
+.footer-bottom a:focus {
+  color: #fff;
+}
+
+.footer-credit-link {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  pointer-events: auto;
+}
+
 /* Reveal animation */
 .fade-up {
   opacity: 0;
