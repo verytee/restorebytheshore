@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta
+    http-equiv="Content-Security-Policy"
+    content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net; script-src 'self' https://cdn.jsdelivr.net; connect-src 'self'; form-action https://formsubmit.co; frame-src https://www.google.com https://www.google.com/maps; base-uri 'self'; object-src 'none'; upgrade-insecure-requests"
+  >
   <title>Restore By The Shore, Penzance | For those in Christian ministry and service</title>
   <meta
     name="description"
@@ -42,7 +47,6 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="110" tabindex="0">
-  <a class="skip-link" href="#main-content">Skip to content</a>
 
   <!-- Navbar -->
   <nav id="mainNav" class="navbar navbar-expand-lg navbar-light site-navbar fixed-top" aria-label="Main navigation">
@@ -70,7 +74,7 @@
           <li class="nav-item"><a class="nav-link" href="#accommodation">Garden Flat</a></li>
           <li class="nav-item"><a class="nav-link" href="#area">Local Area</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Get In Touch</a></li>
-          <li class="nav-item"><a class="nav-link" href="#wellbeing">Resources</a></li>
+          <li class="nav-item"><a class="nav-link" href="#footer">Resources</a></li>
         </ul>
       </div>
     </div>
@@ -151,7 +155,7 @@
               <article class="info-card">
                 <h4><i class="fa-solid fa-house-chimney"></i> A Real Home</h4>
                 <p>
-                  The flat is self-catered, clean, comfortable and well cared for, but it is also a real lived-in home. We are in a quiet residential area around a seven-minute walk from Penzance town centre, and we kindly ask guests to respect our neighbours and the local community.
+                  The flat is self-catered, clean, comfortable and well cared for, but it is also a real lived-in home. We are in a quiet residential area around a seven-minute walk from Penzance town centre.
                 </p>
               </article>
 
@@ -201,10 +205,22 @@
               <div class="accordion-item">
                 <h3 class="accordion-header" id="amenityHeadingOne">
                   <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#amenityCollapseOne" aria-expanded="true" aria-controls="amenityCollapseOne">
-                    <i class="fa-solid fa-mug-hot me-2"></i>Tea, Coffee and Milk Provided
+                   <i class="bi bi-piggy-bank-fill me-2"></i>Affordable Price
                   </button>
                 </h3>
                 <div id="amenityCollapseOne" class="accordion-collapse collapse show" role="region" aria-labelledby="amenityHeadingOne" data-bs-parent="#amenitiesAccordion">
+                  <div class="accordion-body">
+We don't want cost to be a barrier and we strive to offer affordable stays that allow you to focus on recovery and rest. We will discuss the price of a stay with you personally, and we are always happy to work with you to find a price that feels manageable for your situation.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="amenityHeadingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#amenityCollapseTwo" aria-expanded="false" aria-controls="amenityCollapseTwo">
+                    <i class="fa-solid fa-mug-hot me-2"></i>Tea, Coffee, Milk and Bread Provided
+                  </button>
+                </h3>
+                <div id="amenityCollapseTwo" class="accordion-collapse collapse" role="region" aria-labelledby="amenityHeadingTwo" data-bs-parent="#amenitiesAccordion">
                   <div class="accordion-body">
                     We make sure the basics are there waiting for you on arrival. All other food is self-catered, and there are local shops and restaurants nearby.
                   </div>
@@ -212,12 +228,12 @@
               </div>
 
               <div class="accordion-item">
-                <h3 class="accordion-header" id="amenityHeadingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#amenityCollapseTwo" aria-expanded="false" aria-controls="amenityCollapseTwo">
+                <h3 class="accordion-header" id="amenityHeadingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#amenityCollapseThree" aria-expanded="false" aria-controls="amenityCollapseThree">
                     <i class="fa-solid fa-wifi me-2"></i>Wi-Fi Included · No TV
                   </button>
                 </h3>
-                <div id="amenityCollapseTwo" class="accordion-collapse collapse" role="region" aria-labelledby="amenityHeadingTwo" data-bs-parent="#amenitiesAccordion">
+                <div id="amenityCollapseThree" class="accordion-collapse collapse" role="region" aria-labelledby="amenityHeadingThree" data-bs-parent="#amenitiesAccordion">
                   <div class="accordion-body">
                     There is no television here, and we think that can be a gift. Bring your own devices if needed, and enjoy books and games during your stay.
                   </div>
@@ -225,12 +241,12 @@
               </div>
 
               <div class="accordion-item">
-                <h3 class="accordion-header" id="amenityHeadingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#amenityCollapseThree" aria-expanded="false" aria-controls="amenityCollapseThree">
+                <h3 class="accordion-header" id="amenityHeadingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#amenityCollapseFour" aria-expanded="false" aria-controls="amenityCollapseFour">
                     <i class="fa-solid fa-children me-2"></i>Families Welcome
                   </button>
                 </h3>
-                <div id="amenityCollapseThree" class="accordion-collapse collapse" role="region" aria-labelledby="amenityHeadingThree" data-bs-parent="#amenitiesAccordion">
+                <div id="amenityCollapseFour" class="accordion-collapse collapse" role="region" aria-labelledby="amenityHeadingFour" data-bs-parent="#amenitiesAccordion">
                   <div class="accordion-body">
                     Partners and up to two children are welcome. The flat has one double bedroom and one twin room, making it suitable for a family of four.
                   </div>
@@ -238,12 +254,12 @@
               </div>
 
               <div class="accordion-item">
-                <h3 class="accordion-header" id="amenityHeadingFour">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#amenityCollapseFour" aria-expanded="false" aria-controls="amenityCollapseFour">
+                <h3 class="accordion-header" id="amenityHeadingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#amenityCollapseFive" aria-expanded="false" aria-controls="amenityCollapseFive">
                     <i class="fa-solid fa-paw me-2"></i>One Well-Behaved Dog Welcome
                   </button>
                 </h3>
-                <div id="amenityCollapseFour" class="accordion-collapse collapse" role="region" aria-labelledby="amenityHeadingFour" data-bs-parent="#amenitiesAccordion">
+                <div id="amenityCollapseFive" class="accordion-collapse collapse" role="region" aria-labelledby="amenityHeadingFive" data-bs-parent="#amenitiesAccordion">
                   <div class="accordion-body">
                     A well-behaved dog is welcome, but please let us know in advance.
                   </div>
@@ -251,12 +267,12 @@
               </div>
 
               <div class="accordion-item">
-                <h3 class="accordion-header" id="amenityHeadingFive">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#amenityCollapseFive" aria-expanded="false" aria-controls="amenityCollapseFive">
+                <h3 class="accordion-header" id="amenityHeadingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#amenityCollapseSix" aria-expanded="false" aria-controls="amenityCollapseSix">
                     <i class="fa-solid fa-seedling me-2"></i>Enclosed Garden
                   </button>
                 </h3>
-                <div id="amenityCollapseFive" class="accordion-collapse collapse" role="region" aria-labelledby="amenityHeadingFive" data-bs-parent="#amenitiesAccordion">
+                <div id="amenityCollapseSix" class="accordion-collapse collapse" role="region" aria-labelledby="amenityHeadingSix" data-bs-parent="#amenitiesAccordion">
                   <div class="accordion-body">
                     There is a lovely enclosed garden at the front of the property for you to sit in and enjoy.
                   </div>
@@ -467,8 +483,8 @@
                 novalidate
               >
                 <input type="hidden" name="_subject" value="New enquiry from Restore By The Shore website">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="https://restorebytheshore.co.uk/thankyou.html">
+                <input type="hidden" name="_captcha" value="true">
+                <input type="hidden" name="_next" value="thankyou.html">
                 <input type="text" name="_honey" class="d-none" tabindex="-1" autocomplete="off">
 
                 <div class="row g-3">
@@ -565,22 +581,10 @@
       </div>
     </section>
 
-    <!-- Wellbeing -->
-    <section id="wellbeing" class="wellbeing-strip" aria-labelledby="wellbeing-heading">
-      <div class="container">
-        <h2 id="wellbeing-heading" class="visually-hidden">Wellbeing and emergency support</h2>
-        <div class="emergency-bar">
-          <p>
-            <strong><i class="bi bi-telephone-fill me-2"></i>If you are in immediate danger or crisis, please do not wait to hear from us. Call 999 now.</strong>
-            Your life matters. Please reach out for urgent help immediately.
-          </p>
-        </div>
-      </div>
-    </section>
   </main>
 
   <!-- Footer -->
-  <footer class="site-footer" aria-labelledby="footer-heading">
+  <footer id="footer" class="site-footer" aria-labelledby="footer-heading">
     <div class="container">
       <h2 id="footer-heading" class="visually-hidden">Footer information and support links</h2>
       <div class="row g-4">
