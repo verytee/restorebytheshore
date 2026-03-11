@@ -811,6 +811,10 @@ textarea.form-control {
     padding: 4.5rem 0;
   }
 
+  .navbar-brand .brand-title {
+    font-size: 75%;
+  }
+
   .hero-notice {
     text-align: left;
   }
