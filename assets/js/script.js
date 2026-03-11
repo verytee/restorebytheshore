@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const fadeItems = document.querySelectorAll(".fade-up");
   const navCollapse = document.getElementById("navbarNav");
   const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+  const areaCardsWithBg = document.querySelectorAll(".area-accordion .accordion-item[data-bg]");
 
   // Keep thank-you URL aligned with live domain
   if (nextField && window.location.protocol.startsWith("http")) {
@@ -58,6 +59,36 @@ document.addEventListener("DOMContentLoaded", () => {
     fadeItems.forEach((item) => observer.observe(item));
   } else {
     fadeItems.forEach((item) => item.classList.add("visible"));
+  }
+
+  // Lazy-load background images for local area accordion cards
+  if (areaCardsWithBg.length) {
+    const applyAreaBg = (item) => {
+      const imagePath = item.getAttribute("data-bg");
+      if (!imagePath) return;
+      item.style.setProperty("--area-bg", `url('${imagePath}')`);
+      item.removeAttribute("data-bg");
+    };
+
+    if ("IntersectionObserver" in window) {
+      const bgObserver = new IntersectionObserver(
+        (entries, obs) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            applyAreaBg(entry.target);
+            obs.unobserve(entry.target);
+          });
+        },
+        {
+          rootMargin: "200px 0px",
+          threshold: 0,
+        }
+      );
+
+      areaCardsWithBg.forEach((item) => bgObserver.observe(item));
+    } else {
+      areaCardsWithBg.forEach(applyAreaBg);
+    }
   }
 
   // Navbar styling on scroll
