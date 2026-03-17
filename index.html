@@ -11,7 +11,7 @@
   <link rel="canonical" href="https://restorebytheshore.co.uk/">
   <meta
     http-equiv="Content-Security-Policy"
-    content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; connect-src 'self'; form-action https://formsubmit.co; frame-src https://www.google.com https://www.google.com/maps; base-uri 'self'; object-src 'none'; upgrade-insecure-requests"
+    content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; connect-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; form-action https://formsubmit.co; frame-src https://www.google.com https://www.google.com/maps; base-uri 'self'; object-src 'none'; upgrade-insecure-requests"
   >
   <title>Restore By The Shore, Penzance | For those in Christian ministry and service</title>
   <meta
@@ -538,6 +538,7 @@ One well-behaved dog is welcome with prior notice. To keep the garden a clean an
                 action="https://formsubmit.co/kate.poole@cornwallplc.co.uk"
                 method="POST"
                 class="contact-form glass-panel"
+                autocomplete="on"
                 novalidate
               >
                 <input type="hidden" name="_subject" value="New enquiry from Restore By The Shore website">
@@ -548,25 +549,25 @@ One well-behaved dog is welcome with prior notice. To keep the garden a clean an
                 <div class="row g-3">
                   <div class="col-12 col-md-6">
                     <label class="form-label" for="firstName">First Name <span aria-hidden="true">*</span></label>
-                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Your first name" required>
+                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Your first name" autocomplete="given-name" required>
                     <div class="invalid-feedback">Please enter your first name.</div>
                   </div>
 
                   <div class="col-12 col-md-6">
                     <label class="form-label" for="lastName">Last Name <span aria-hidden="true">*</span></label>
-                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Your last name" required>
+                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Your last name" autocomplete="family-name" required>
                     <div class="invalid-feedback">Please enter your last name.</div>
                   </div>
 
                   <div class="col-12 col-md-6">
                     <label class="form-label" for="phone">Phone Number <span aria-hidden="true">*</span></label>
-                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="07xxx xxxxxx" required>
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="07xxx xxxxxx" autocomplete="tel" required>
                     <div class="invalid-feedback">Please enter a contact number.</div>
                   </div>
 
                   <div class="col-12 col-md-6">
                     <label class="form-label" for="email">Email Address <span aria-hidden="true">*</span></label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="your@email.com" required>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="your@email.com" autocomplete="email" required>
                     <div class="invalid-feedback">Please enter a valid email address.</div>
                   </div>
 
@@ -578,6 +579,7 @@ One well-behaved dog is welcome with prior notice. To keep the garden a clean an
                       id="organisation"
                       name="organisation"
                       placeholder="Name of church or charity, including postcode"
+                      autocomplete="off"
                       required
                     >
                     <div class="invalid-feedback">Please tell us your church or organisation.</div>
@@ -607,6 +609,7 @@ One well-behaved dog is welcome with prior notice. To keep the garden a clean an
                       name="message"
                       rows="8"
                       placeholder="Tell us a little about yourself, when you'd like to come, and any questions you may have."
+                      autocomplete="off"
                       required
                     ></textarea>
                     <div class="invalid-feedback">Please enter your message.</div>
