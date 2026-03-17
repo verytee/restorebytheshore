@@ -1,0 +1,25 @@
+# Restore By The Shore
+
+Official website: https://restorebytheshore.co.uk/
+Primary language: en-GB
+Type: static informational site for Christian ministry and service respite accommodation in Penzance, Cornwall.
+
+## Canonical URLs
+- https://restorebytheshore.co.uk/
+
+## Non-indexed utility page
+- https://restorebytheshore.co.uk/thankyou.html (form success page, noindex)
+
+## Discovery
+- robots: https://restorebytheshore.co.uk/robots.txt
+- sitemap: https://restorebytheshore.co.uk/sitemap.xml
+
+## Key content summary
+- Purpose: offer peaceful, affordable self-catered stays for people in Christian ministry and service who need rest and renewal.
+- Audience: people employed by or volunteering with Christian organisations or registered charities.
+- Location context: Penzance, Cornwall, UK.
+- Contact path: website enquiry form on homepage.
+
+## Safety context
+- Includes links to crisis and mental health support resources in the footer.
+- In emergencies, users should contact local emergency services.

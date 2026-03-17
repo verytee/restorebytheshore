@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Keep form success page out of search results
+Disallow: /thankyou.html
+
+Sitemap: https://restorebytheshore.co.uk/sitemap.xml
