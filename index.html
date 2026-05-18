@@ -11,7 +11,7 @@
   <link rel="canonical" href="https://restorebytheshore.co.uk/">
   <meta
     http-equiv="Content-Security-Policy"
-    content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; connect-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; form-action https://formsubmit.co; frame-src https://www.google.com https://www.google.com/maps; base-uri 'self'; object-src 'none'; upgrade-insecure-requests"
+    content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://unpkg.com; connect-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://formspree.io; form-action https://formsubmit.co https://formspree.io; frame-src https://www.google.com https://www.google.com/maps; base-uri 'self'; object-src 'none'; upgrade-insecure-requests"
   >
   <title>Restore By The Shore - Peaceful holiday in Penzance, Cornwall for Christian Faith Leaders | £100 per night </title>
   <meta
@@ -611,9 +611,13 @@ One well-behaved dog is welcome with prior notice. To keep the garden a clean an
             </p>
 
             <div class="contact-form-wrap">
+              <div data-fs-success class="fs-success visually-hidden"></div>
+              <div data-fs-error class="fs-error visually-hidden"></div>
+
+              <!-- Formspree AJAX integration: formId=mrbjojnz -->
               <form
                 id="contactFormElement"
-                action="https://formsubmit.co/kate.poole@cornwallplc.co.uk"
+                action="https://formspree.io/f/mrbjojnz"
                 method="POST"
                 class="contact-form glass-panel"
                 autocomplete="on"
@@ -627,31 +631,32 @@ One well-behaved dog is welcome with prior notice. To keep the garden a clean an
                 <div class="row g-3">
                   <div class="col-12 col-md-6">
                     <label class="form-label" for="firstName">First Name <span aria-hidden="true">*</span></label>
-                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Your first name" autocomplete="given-name" required>
+                    <input data-fs-field type="text" class="form-control" id="firstName" name="firstName" placeholder="Your first name" autocomplete="given-name" required>
                     <div class="invalid-feedback">Please enter your first name.</div>
                   </div>
 
                   <div class="col-12 col-md-6">
                     <label class="form-label" for="lastName">Last Name <span aria-hidden="true">*</span></label>
-                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Your last name" autocomplete="family-name" required>
+                    <input data-fs-field type="text" class="form-control" id="lastName" name="lastName" placeholder="Your last name" autocomplete="family-name" required>
                     <div class="invalid-feedback">Please enter your last name.</div>
                   </div>
 
                   <div class="col-12 col-md-6">
                     <label class="form-label" for="phone">Phone Number <span aria-hidden="true">*</span></label>
-                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="07xxx xxxxxx" autocomplete="tel" required>
+                    <input data-fs-field type="tel" class="form-control" id="phone" name="phone" placeholder="07xxx xxxxxx" autocomplete="tel" required>
                     <div class="invalid-feedback">Please enter a contact number.</div>
                   </div>
 
                   <div class="col-12 col-md-6">
                     <label class="form-label" for="email">Email Address <span aria-hidden="true">*</span></label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="your@email.com" autocomplete="email" required>
+                    <input data-fs-field type="email" class="form-control" id="email" name="email" placeholder="your@email.com" autocomplete="email" required>
                     <div class="invalid-feedback">Please enter a valid email address.</div>
+                    <span data-fs-error="email" class="form-error small text-danger"></span>
                   </div>
 
                   <div class="col-12">
                     <label class="form-label" for="organisation">Affiliated Church or Organisation, including postcode <span aria-hidden="true">*</span></label>
-                    <input
+                    <input data-fs-field
                       type="text"
                       class="form-control"
                       id="organisation"
@@ -665,7 +670,7 @@ One well-behaved dog is welcome with prior notice. To keep the garden a clean an
 
                   <div class="col-12">
                     <label class="form-label" for="role">Your Role <span aria-hidden="true">*</span></label>
-                    <select class="form-select" id="role" name="role" required>
+                    <select data-fs-field class="form-select" id="role" name="role" required>
                       <option value="" selected disabled>Please select your role...</option>
                       <option>Vicar / Rector / Minister</option>
                       <option>Curate</option>
@@ -681,7 +686,7 @@ One well-behaved dog is welcome with prior notice. To keep the garden a clean an
 
                   <div class="col-12">
                     <label class="form-label" for="message">Message <span aria-hidden="true">*</span></label>
-                    <textarea
+                    <textarea data-fs-field
                       class="form-control"
                       id="message"
                       name="message"
@@ -691,6 +696,7 @@ One well-behaved dog is welcome with prior notice. To keep the garden a clean an
                       required
                     ></textarea>
                     <div class="invalid-feedback">Please enter your message.</div>
+                    <span data-fs-error="message" class="form-error small text-danger"></span>
                   </div>
 
                   <div class="col-12">
@@ -710,12 +716,16 @@ One well-behaved dog is welcome with prior notice. To keep the garden a clean an
                   </div>
 
                   <div class="col-12 text-center pt-2">
-                    <button type="submit" class="btn btn-brand-primary btn-submit" id="submitBtn" disabled>
+                    <button data-fs-submit-btn type="submit" class="btn btn-brand-primary btn-submit" id="submitBtn" disabled>
                       Send Message
                     </button>
                   </div>
+                  <div class="col-12 text-center mt-3">
+                    <p class="small text-muted mb-0">If you don't receive a response, email kate.poole@cornwallplc.co.uk directly.</p>
+                  </div>
                 </div>
               </form>
+              <!-- Using a regular POST to Formspree so the `_next` hidden field redirects to thankyou.html -->
             </div>
           </div>
         </div>
